@@ -97,19 +97,47 @@ button:focus-visible {
 } */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: sans-serif;
+  transition: ease-in .05s;
+  color: #495057;
 }
 
-#search-weather-input {
-  font-size: 20px;
+form {
+ display: flex;
+ gap: .5rem;
+ justify-content: center;
+ align-items: center;
+}
+
+form input {
+  padding-left: .5rem;
 }
 
 #search-weather-btn {
-  padding: 5px 3ch;
+  background-color: #06d6a0;
   border: none;
-  background-color: #219ebc;
-  border-radius: .20rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 1.5rem;
+  border-radius: .2rem;
+}
+
+#search-weather-btn:hover {
+  cursor: pointer;
+}
+
+main {
+  margin: 5ch auto;
+  text-align: center;
+  max-width: 45ch;
+  padding: 1rem 2rem;
+  border-radius: .75rem;
+  background-color: #fffcf2;
+  box-shadow: -5px 5px 10px #ced4da;
+}
+
+@media (max-width: 600px) {
+  #app {
+    font-size: .80em;
+  }
 }

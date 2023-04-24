@@ -15,7 +15,8 @@ export default function appendWeather(weatherData) {
 
   const tempContainer = document.createElement("div");
   const temp = document.createElement("h2");
-  temp.textContent = `${kelvinToCelsius(weatherData.main.temp)}°C`;
+  temp.textContent = `${kelvinToCelsius(weatherData.main.temp)}°C | 
+  ${weatherData.main.temp}°F`;
 
   const detailsContainer = document.createElement("div");
 
